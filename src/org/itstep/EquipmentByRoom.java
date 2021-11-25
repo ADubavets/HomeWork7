@@ -28,11 +28,11 @@ public class EquipmentByRoom {
     public double getPower(){
         int power = 0;
         for (Equipment equipment: equipments) if (equipment.isWork() == true) power += equipment.getPower();
-        return  power;
+        return power;
     }
     public void equipmentPowerMax(double max) {
         for (Equipment equipment: equipments)
-            if (max < equipment.power) System.out.println(equipment.toString());
+            if (max < equipment.power) System.out.println(equipment.toStringMain());
     }
 
     public String getNameRoom() {

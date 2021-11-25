@@ -36,7 +36,7 @@ public class MicrowaveOven extends Equipment{
         String work = "не включено";
         if (isWork() == true)  work = "включено";
         String result = String.format("Электрооборудование: %s, Мощность: %s," +
-                        " Установка: %s, Количество режимов: %s, Объем: %s, Работа: %s \n",
+                        " Установка: %s, Количество режимов: %s, Объем: %s, Работа: %s\n",
                 model,getPower(),installation,getOperatingModes(),getVolume(),work);
         return result;
     }

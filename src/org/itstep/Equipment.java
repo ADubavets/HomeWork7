@@ -2,7 +2,10 @@ package org.itstep;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Collections;
 import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Equipment implements Comparable<Equipment> {
     private String name;        // наименование электрооборудования
@@ -14,6 +17,7 @@ public class Equipment implements Comparable<Equipment> {
     private String sDate;       // строковое значение даты выпуска
     private double price;       // цена покупки электрооборудования
     private boolean work;       // состояние работы: включено / выключено
+    private List<Equipment> equipments = new LinkedList<>();
 
     public Equipment(String name,Seller seller, String model, int power, int category, String sDate,
                      double price, boolean work) throws ParseException {
@@ -65,21 +69,27 @@ public class Equipment implements Comparable<Equipment> {
         return seller;
     }
 
+    public void sortMain(){
+        Collections.sort(equipments);
+    }
+
     @Override
     public int compareTo(Equipment o) {
         if (this.power == o.power) return 0;
         else if (this.power < o.power) return -1;
         else return 1;
     }
-    public String toString(){
-        final StringBuffer buffer = new StringBuffer("Equipment {");
-        String work = "does not work ";
-        if (isWork() == true) work = "works ";
-        buffer.append("name = ").append(name);
-        buffer.append("seller = ").append(seller);
-        buffer.append("model = ").append(model);
-        buffer.append("power = ").append(power);
-        buffer.append("} " + work);
+    public String toStringMain(){
+        final StringBuffer buffer = new StringBuffer("Электрооборудование:");
+        buffer.append(" ").append(name);
+        if (seller != null)
+            buffer.append(" Производство: ").append(seller);
+        buffer.append(" Модель: ").append(model);
+        buffer.append(" Мощность: ").append(power);
+        String work = "не включено";
+        if (isWork() == true) work = "включено\n";
+        buffer.append(" Работа: " + work);
         return buffer.toString();
     }
+
 }

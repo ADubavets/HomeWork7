@@ -5,7 +5,11 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class HomeElectricalEquipment {
-    private static int max = 400;
+    static int nRows = 2;
+    static int nCols = 5;
+    static String[][] arr = new String[nCols][nRows];
+    private static final int max = 100;
+
     public static void main(String[] args) throws ParseException {
         /*
         3. Домашние электроприборы. Определить иерархию электроприборов.
@@ -15,7 +19,7 @@ public class HomeElectricalEquipment {
          */
         List<EquipmentByRoom> list = new LinkedList<>();
         // комната 1
-        EquipmentByRoom room1 = new EquipmentByRoom("Комната 1");
+        EquipmentByRoom room1 = new EquipmentByRoom("Комн. 1 ");
         list.add(room1);
         Lamps lamp1 = new Lamps("Настольная лампа",
                 null,
@@ -33,17 +37,15 @@ public class HomeElectricalEquipment {
                 9,
                 2,
                 "25.06.2019",
-                3.15,false,
+                3.15, false,
                 900);
         room1.addEquipment(lamp1);
         room1.addEquipment(lamp2);
         room1.sort();
         System.out.println(room1);
-        System.out.println("Текущее потребление, Вт: " + room1.getPower());
-        System.out.println();
 
         // комната 2
-        EquipmentByRoom room2 = new EquipmentByRoom("Зал");
+        EquipmentByRoom room2 = new EquipmentByRoom("Зал     ");
         list.add(room2);
         Lamps lamp3 = new Lamps("Светильник БРА",
                 null,
@@ -82,16 +84,14 @@ public class HomeElectricalEquipment {
         tvSets.setWork(true);
         room2.sort();
         System.out.println(room2);
-        System.out.println("Текущее потребление, Вт: " + room2.getPower());
-        System.out.println();
 
         // комната 3
-        EquipmentByRoom room3 = new EquipmentByRoom("Комната 2");
+        EquipmentByRoom room3 = new EquipmentByRoom("Комн. 2 ");
         list.add(room3);
         Lamps lamp5 = new Lamps("Светильник БРА",
                 null,
                 ", E27",
-                20,4,
+                20, 4,
                 "04.02.2021",
                 300.80,
                 false,
@@ -113,16 +113,14 @@ public class HomeElectricalEquipment {
         room3.addEquipment(tvSets2);
         room3.sort();
         System.out.println(room3);
-        System.out.println("Текущее потребление, Вт: " + room3.getPower());
-        System.out.println();
 
         // комната 4
-        EquipmentByRoom room4 = new EquipmentByRoom("Кухня");
+        EquipmentByRoom room4 = new EquipmentByRoom("Кухня   ");
         list.add(room4);
         Lamps lamp6 = new Lamps("Светильник БРА",
                 null,
                 ", E27",
-                20,4,
+                20, 4,
                 "04.02.2020",
                 300.80,
                 false,
@@ -168,11 +166,9 @@ public class HomeElectricalEquipment {
         room4.addEquipment(microwaveOven);
         room4.sort();
         System.out.println(room4);
-        System.out.println("Текущее потребление, Вт: " + room4.getPower());
-        System.out.println();
 
         // комната 5
-        EquipmentByRoom room5 = new EquipmentByRoom("Сан. узел");
+        EquipmentByRoom room5 = new EquipmentByRoom("Сан.узел");
         list.add(room5);
         Lamps lamp7 = new Lamps("Светильник",
                 null,
@@ -187,7 +183,7 @@ public class HomeElectricalEquipment {
         WashingMachines machines = new WashingMachines("Стиральная машина",
                 null,
                 "Indesit IWSB 50851 BY",
-                80,
+                300,
                 5,
                 "20.05.2010",
                 504,
@@ -198,21 +194,33 @@ public class HomeElectricalEquipment {
         room5.addEquipment(machines);
         room5.sort();
         System.out.println(room5);
-        System.out.println("Текущее потребление, Вт: " + room5.getPower());
-        System.out.println();
+
+        System.out.println("Текущее потребление, Вт:");
+        int i = 0;
+        for (EquipmentByRoom room : list) {
+            arr[i][0] = room.getNameRoom();
+            arr[i][1] = Double.toString(room.getPower());
+            i++;
+        }
+        for (i = 0; i < nCols; i++) {
+            for (int j = 0; j < nRows; j++) {
+                String s = "      ";
+                s = s + arr[i][j];
+                System.out.print(s);
+            }
+            System.out.println();
+        }
 
         double power = 0.0;
-        for (EquipmentByRoom room: list) power += room.getPower();
+        for (EquipmentByRoom room : list) power += room.getPower();
         System.out.println("Общее текущее потребление по всей квартире, Вт: " + power);
 
         // оборудование, мощность которого больше 400 Вт
         System.out.println();
-        System.out.println("Список электрооборудования, мощность которого больше " + max +" Вт:");
-        for (EquipmentByRoom room: list) {
+        System.out.println("Список электрооборудования, мощность которого больше " + max + " Вт:");
+        for (EquipmentByRoom room : list) {
             room.equipmentPowerMax(max);
         }
-
     }
-
 }
 
