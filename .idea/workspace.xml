@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="55d86fe3-ea7e-4cf1-97d9-faa444c3152f" name="Changes" comment="HomeWork7">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/itstep/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/itstep/Color.java" afterDir="false" />
-    </list>
-=======
     <list default="true" id="55d86fe3-ea7e-4cf1-97d9-faa444c3152f" name="Changes" comment="HomeWork7" />
->>>>>>> origin/master
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +30,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="210XtFJvC6VqK5xtbtsbnwSuilz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -115,15 +109,8 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="HomeElectricalEquipment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="16" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-=======
   <component name="RunManager" selected="Application.HomeElectricalEquipment">
     <configuration name="HomeElectricalEquipment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
->>>>>>> origin/master
       <option name="MAIN_CLASS_NAME" value="org.itstep.HomeElectricalEquipment" />
       <module name="HomeWork7" />
       <extension name="coverage">
@@ -137,16 +124,9 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-<<<<<<< HEAD
-      <option name="ALTERNATIVE_JRE_PATH" value="16" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="org.itstep.Main" />
-      <module name="HomeWork7" />
-=======
       <option name="MAIN_CLASS_NAME" value="org.itstep.Main" />
       <module name="HomeWork7" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
->>>>>>> origin/master
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -173,11 +153,10 @@
       <updated>1637079195296</updated>
       <workItem from="1637079197076" duration="13243000" />
       <workItem from="1637092870820" duration="126000" />
-      <workItem from="1637826859534" duration="3649000" />
-<<<<<<< HEAD
-      <workItem from="1637835163553" duration="1427000" />
-=======
->>>>>>> origin/master
+      <workItem from="1637826859534" duration="4520000" />
+      <workItem from="1637833788289" duration="758000" />
+      <workItem from="1637834623115" duration="171000" />
+      <workItem from="1637837654352" duration="71000" />
     </task>
     <task id="LOCAL-00001" summary="HomeWork7">
       <created>1637828496949</created>
@@ -235,7 +214,35 @@
       <option name="project" value="LOCAL" />
       <updated>1637831116636</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="HomeWork7">
+      <created>1637832466345</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1637832466345</updated>
+    </task>
+    <task id="LOCAL-00010" summary="HomeWork7">
+      <created>1637832496144</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1637832496144</updated>
+    </task>
+    <task id="LOCAL-00011" summary="HomeWork7">
+      <created>1637832547336</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1637832547336</updated>
+    </task>
+    <task id="LOCAL-00012" summary="HomeWork7">
+      <created>1637833818927</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1637833818927</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,11 +259,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-<<<<<<< HEAD
-                        <option value="master" />
-=======
                         <option value="HEAD" />
->>>>>>> origin/master
                       </list>
                     </value>
                   </entry>
@@ -273,13 +276,15 @@
         </entry>
       </map>
     </option>
-<<<<<<< HEAD
     <option name="oldMeFiltersMigrated" value="true" />
-=======
->>>>>>> origin/master
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="HomeWork7" />
     <option name="LAST_COMMIT_MESSAGE" value="HomeWork7" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/HomeWork7$HomeElectricalEquipment.ic" NAME="HomeElectricalEquipment Coverage Results" MODIFIED="1637832402725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.itstep.*</FILTER>
+    </SUITE>
   </component>
 </project>
