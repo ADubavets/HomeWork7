@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="55d86fe3-ea7e-4cf1-97d9-faa444c3152f" name="Changes" comment="HomeWork7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/itstep/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/itstep/Color.java" afterDir="false" />
     </list>
+=======
+    <list default="true" id="55d86fe3-ea7e-4cf1-97d9-faa444c3152f" name="Changes" comment="HomeWork7" />
+>>>>>>> origin/master
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,10 +115,15 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.Main">
     <configuration name="HomeElectricalEquipment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="16" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+=======
+  <component name="RunManager" selected="Application.HomeElectricalEquipment">
+    <configuration name="HomeElectricalEquipment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+>>>>>>> origin/master
       <option name="MAIN_CLASS_NAME" value="org.itstep.HomeElectricalEquipment" />
       <module name="HomeWork7" />
       <extension name="coverage">
@@ -128,10 +137,16 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+<<<<<<< HEAD
       <option name="ALTERNATIVE_JRE_PATH" value="16" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.itstep.Main" />
       <module name="HomeWork7" />
+=======
+      <option name="MAIN_CLASS_NAME" value="org.itstep.Main" />
+      <module name="HomeWork7" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+>>>>>>> origin/master
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -159,7 +174,10 @@
       <workItem from="1637079197076" duration="13243000" />
       <workItem from="1637092870820" duration="126000" />
       <workItem from="1637826859534" duration="3649000" />
+<<<<<<< HEAD
       <workItem from="1637835163553" duration="1427000" />
+=======
+>>>>>>> origin/master
     </task>
     <task id="LOCAL-00001" summary="HomeWork7">
       <created>1637828496949</created>
@@ -234,7 +252,11 @@
                   <entry key="branch">
                     <value>
                       <list>
+<<<<<<< HEAD
                         <option value="master" />
+=======
+                        <option value="HEAD" />
+>>>>>>> origin/master
                       </list>
                     </value>
                   </entry>
@@ -251,7 +273,10 @@
         </entry>
       </map>
     </option>
+<<<<<<< HEAD
     <option name="oldMeFiltersMigrated" value="true" />
+=======
+>>>>>>> origin/master
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="HomeWork7" />
